@@ -1,0 +1,15 @@
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+files:
+    include: '**/*.s+(a|c)ss'
+    ignore:
+        - 'node_modules/**/*.*'
+        - 'webpack/**/*.*'
+        - 'gulp/**/*.*'
+rules:
+    no-debug: 1
+    indentation:
+        - 4
+        -
+          size: 4

@@ -1,0 +1,12 @@
+{
+    "esnext": true,
+    "maxErrors": 10,
+    "fileExtensions": [".js", ".jsx"],
+    "excludeFiles": ["node_modules/**", "src/common/server/shim/**"],
+    "disallowMixedSpacesAndTabs": true,
+    "disallowMultipleLineBreaks": true,
+    "disallowMultipleSpaces": { "allowEOLComments": true },
+    "disallowTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowVar": true
+}

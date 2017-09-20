@@ -1,0 +1,35 @@
+@import "styles/variables";
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('assets/fonts/fontawesome-webfont.eot');
+  src: url('assets/fonts/fontawesome-webfont.woff') format('woff'),
+  url('assets/fonts/fontawesome-webfont.ttf') format('truetype');
+  //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+:global {
+  @import 'normalize.css/normalize.css';
+  @import 'styles/font/font-awesome.scss';
+  *{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+  }
+  html {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", SimHei, "WenQuanYi Zen Hei", "Apple LiGothic Medium", "ST Heiti", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei Sharp", serif;
+  }
+  div, input {
+    box-sizing: border-box;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    touch-acion: pan-y;
+  }
+  html,body{
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: $base-bg
+  }
+}

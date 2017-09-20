@@ -1,0 +1,34 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "impliedStrict": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true
+    },
+    "rules": {
+        "no-empty": "error",
+        "no-invalid-regexp": "error",
+        "no-irregular-whitespace": "error",
+        "no-unreachable": "warn",
+        "no-obj-calls": "error",
+        "valid-jsdoc": "warn",
+        "valid-typeof": "error",
+        "eqeqeq": "error",
+        "no-invalid-this": "off",
+        "strict": "error",
+        "no-with": "warn",
+        "no-var": "warn",
+        "no-const-assign": "error",
+        "no-dupe-class-members": "error"
+    }
+}

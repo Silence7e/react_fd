@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        ["import", {
+            "libraryName": "antd-mobile",
+            "libraryDirectory": "lib",
+            "style": true
+        }],
+        "lodash",
+        "syntax-dynamic-import",
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-undefined-to-void",
+        "transform-es3-property-literals",
+        "transform-inline-environment-variables",
+        "transform-es3-member-expression-literals"
+    ],
+    "presets": [
+        ["env", {
+            "modules": false,
+            "targets": {"browsers": ["last 2 versions", "safari >= 7"]}
+        }],
+        "react",
+        "stage-0"
+    ],
+    "env": {
+        "development": {
+            "presets": ["react-hmre"]
+        }
+    },
+    "compact": false
+}

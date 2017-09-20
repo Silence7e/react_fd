@@ -1,0 +1,38 @@
+@mixin clearfix() {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+@mixin border-radius ($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  border-radius:         $radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+@mixin  display-flex(){
+  /*display: box;			   OLD - Android 4.4- */
+  /*display: -webkit-box;	   OLD - iOS 6-, Safari 3.1-6 */
+  /*display: -moz-box;		   OLD - Firefox 19- (buggy but mostly works) */
+  /*display: -ms-flexbox;	   TWEENER - IE 10 */
+  /*display: -webkit-flex;	  NEW - Chrome */
+  display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+@mixin  flex-value($flex: 1){
+  /*-webkit-box-flex: $flex;	   OLD - iOS 6-, Safari 3.1-6 */
+  /*-moz-box-flex: $flex;		  OLD - Firefox 19- */
+  /*-webkit-flex: $flex;		   Chrome */
+  /*-ms-flex: $flex;			   IE 10 */
+  flex: $flex;
+}
+
+@mixin  border-bottom($color: #000){
+  border-bottom: 1px solid $color;
+}
