@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Home from 'components/home';
+import Home from 'components/Home';
 import {APP_API_REQUEST} from 'client/actions/app';
 import home from 'client/api/home';
 

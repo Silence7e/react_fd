@@ -6,7 +6,7 @@ var path = require('path');
 
 var config = path.resolve('./src', 'webpack.config.js');
 var clientEntry ={
-  main: path.resolve('./src', 'client/bootstrap/main.js'),
+  main: [path.resolve('./src', 'client/bootstrap/main.js')],
   vendor:['react','react-dom','react-css-modules','react-redux', 'react-router', 'react-router-redux']
 
 };
