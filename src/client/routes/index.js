@@ -4,7 +4,6 @@ import others from './others';
 export default {
     childRoutes: [
         mainRoute,
-
         ...others
     ]
 }

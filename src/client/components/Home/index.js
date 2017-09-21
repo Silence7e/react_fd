@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import CSS from 'react-css-modules';
 import styles from './index.scss';
-
+import PropTypes from 'prop-types';
 @CSS(styles)
-export default class extends Component {
+class Home extends Component {
     constructor(props) {
         super(props);
     }
@@ -12,7 +12,11 @@ export default class extends Component {
     }
     render() {
         const props = this.props;
-        let num = Number(props.text)||1;
-        return <div styleName="home-text" onClick={()=>props.getText(props.text)}>{props.text || 'click!'}</div>;
+        return <div styleName="home-text" onClick={()=>props.getText(props.text || 1)}>{props.text || 'click!'}</div>;
     }
 }
+Home.propTypes ={
+    text: PropTypes.number
+};
+
+export default Home;

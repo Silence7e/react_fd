@@ -1,6 +1,3 @@
-/**
- * Created by Changlin.
- */
 'use strict';
 
 module.exports = function(gulp, sources, dest) {

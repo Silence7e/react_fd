@@ -3,9 +3,9 @@ import API from '../../api';
 
 const url = '/';
 
-function* load() {
-    let {response:text} = yield call(API.home.getInitText,{id:1});
-    console.log(text);
+function* load({location}) {
+    let id = Number(location.query.id) || 1
+    let {response:text} = yield call(API.home.getInitText,{id});
    return {text};
 }
 
